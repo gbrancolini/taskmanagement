@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management</h1>
+        <div class="task-form">
+            <input type="text" id="task-title" placeholder="Task Title">
+            <input type="text" id="task-description" placeholder="Task Description">
+            <input type="number" id="task-priority" placeholder="Priority">
+            <input type="date" id="task-dueDate" placeholder="Due Date">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <table class="task-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+        <footer>
+            <a href="/swagger" target="_blank">API Documentation (Swagger UI)</a>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

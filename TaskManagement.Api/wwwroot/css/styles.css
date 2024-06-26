@@ -1,0 +1,166 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: #1a73e8;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .task-form input,
+    .task-form button {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .task-form button {
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        .task-form button:hover {
+            background-color: #0b60d0;
+        }
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+    .task-list li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        .task-list li:hover {
+            background-color: #f9f9f9;
+        }
+
+    .task-list span {
+        display: block;
+    }
+
+    .task-list button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .task-list button:hover {
+            background-color: #0b60d0;
+        }
+
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .task-table th, .task-table td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    .task-table th {
+        background-color: #007bff;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .task-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .task-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .task-table td {
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .task-table button {
+        padding: 5px 10px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .task-table button.edit {
+            background-color: #ffc107;
+            color: #fff;
+        }
+
+            .task-table button.edit:hover {
+                background-color: #e0a800;
+            }
+
+        .task-table button.delete {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+            .task-table button.delete:hover {
+                background-color: #c82333;
+            }
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
