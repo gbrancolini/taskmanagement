@@ -37,12 +37,10 @@ TaskManagement/
 │   ├── TaskServiceTests.cs       # Service tests
 │   └── TaskManagement.Services.Tests.csproj
 │
-├── TaskManagement.Repositories.Tests/ # Unit tests for repositories
-│   ├── TaskRepositoryTests.cs    # Repository tests
-│   └── TaskManagement.Repositories.Tests.csproj
-│
-├── docker-compose.yml            # Docker Compose configuration
-└── Dockerfile                    # Dockerfile for API
+└── TaskManagement.Repositories.Tests/ # Unit tests for repositories
+    ├── TaskRepositoryTests.cs    # Repository tests
+    └── TaskManagement.Repositories.Tests.csproj
+
 
 
 ## Setting Up and Running the Application
